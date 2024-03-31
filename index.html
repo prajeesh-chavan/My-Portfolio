@@ -55,7 +55,8 @@
           class="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
           <span>Hi I'm </span> <span
             class="leading-12 block w-full bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text py-2 text-transparent lg:inline">Prajeesh
-            Chavan</span></h1>
+            Chavan</span>
+        </h1>
         <p class="mb-8 leading-relaxed">"Welcome to my portfolio! I'm Prajeesh Chavan, a passionate 2nd-year Computer
           Science student with a knack for Front End Development and proficiency in languages like C++, Java, along with
           strong foundations in Data Structures and Algorithms (DSA) and Object-Oriented Programming (OOPs). Dive in to
@@ -274,8 +275,8 @@
 
     <div class="flex flex-wrap items-center justify-center gap-8">
       <!-- Project 1 -->
-      <a href="erbalcareinfo.000webhostapp.com/">
-        <div class="max-w-80 overflow-hidden rounded shadow-lg lg:max-w-sm">
+      <a href="herbalcareinfo.000webhostapp.com/">
+        <div class="max-w-80 overflow-hidden rounded shadow-lg lg:max-w-sm hover:scale-105">
           <div class="carousel h-56 w-full">
             <div class="carousel-container">
               <div class="slide w-full"><img src="images/herbalcare.png" alt="" /></div>
@@ -305,7 +306,7 @@
       </a>
       <!-- Project 2 -->
 
-      <div class="max-w-80 overflow-hidden rounded shadow-lg lg:max-w-sm">
+      <div class="max-w-80 overflow-hidden rounded shadow-lg lg:max-w-sm hover:scale-105">
         <div class="carousel h-56 w-full">
           <div class="carousel-container">
             <div class="slide w-full"><img src="images/proj2.png" alt="Image 1" /></div>
@@ -314,11 +315,14 @@
         <div class="px-6 py-4">
           <div class="mb-2 text-xl font-bold">Cardiac Arrest Detection System</div>
           <p class="text-base text-gray-700">
-            Spearheaded the design and development of a wrist-wearable Cardiac Arrest Detection System. Engineered an
-            efficient pulse rate monitoring system with real-time alerts and guidance for timely intervention. <br />
-            <br />
+            👨‍💼 Spearheaded the design and development of a wrist-wearable Cardiac Arrest Detection System. 🛠️
+            Engineered an efficient pulse rate monitoring system with real-time alerts and guidance for timely
+            intervention.
+            <br>⏱️
             Optimized manufacturing processes to ensure affordability and seamless integration into users' daily lives.
+            🔄👌
           </p>
+          <br>
         </div>
 
         <div class="px-6 pb-2 pt-4">
@@ -330,6 +334,36 @@
             class="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">#Interfacing</span>
         </div>
       </div>
+
+      <!-- Project 3 -->
+      <div class="max-w-80 overflow-hidden rounded shadow-lg lg:max-w-sm hover:scale-105">
+        <div class="carousel h-56 w-full">
+          <div class="carousel-container">
+            <div class="slide w-full"><img src="images/appdev.png" alt="Image 1" /></div>
+          </div>
+        </div>
+        <div class="px-6 py-4">
+          <div class="mb-2 text-xl font-bold">E-Waste Management App</div>
+          <p class="text-base text-gray-700">
+            Got old gadgets gathering dust? <br>♻️ Don't toss them, let's recycle smartly! <br>🔄
+            Our app bridges the gap between YOU and responsible e-waste disposal pros.
+            <br>🌍💡
+            Together, let's make a difference for our planet!
+            <br>
+
+            Join us in the eco-revolution! <br>🌟Together, we can make a greener, cleaner future!
+            ♻️🌱
+          </p>
+        </div>
+
+        <div class="px-6 pb-2 pt-4">
+          <span
+            class="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">#MitAppInventory</span>
+          <span
+            class="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">#GoogleFireBase</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -479,7 +513,7 @@
 <script>
   const container = document.querySelector('.carousel-container');
   const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length - 1;
+  const totalSlides = slides.length - 2;
   let currentIndex = 0;
 
   function showSlide(index) {

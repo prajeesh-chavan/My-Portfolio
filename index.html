@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles/styles.css" />
   <title>Prajeesh Chavan</title>
-  <link rel="shortcut icon" href="images/pc.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/pc.png" type="image/png" />
 </head>
 <style>
   /* body {
@@ -76,14 +76,14 @@
   <!-- Academics -->
   <!-- This is an example component -->
 
-  <div class="min-h-screen bg-gray-100 p-3 pt-12" id="Academics">
+  <div class="min-h-screen bg-gray-100 p-2 pt-12" id="Academics">
     <h1
-      class="my-8 ms-40 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+      class="my-8 lg:ms-40 ms-5 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
       <span
         class="leading-12 block w-full bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text py-2 text-transparent lg:inline">Academics:</span>
     </h1>
     <div class="flex min-h-screen justify-center">
-      <div class="mx-auto w-2/3">
+      <div class="mx-auto w-2/3 sm:1/4 min-w-80">
         <div class="flex w-full flex-row">
           <!-- left col -->
 
@@ -182,7 +182,7 @@
 
   <section id="skills" class="min-h-screen content-center">
     <h1
-      class="my-8 ms-40 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+      class="my-8 lg:ms-40 ms-5 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
       <span
         class="leading-12 block w-full bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text py-2 text-transparent lg:inline">Skills:</span>
     </h1>
@@ -267,14 +267,14 @@
   <!-- Project -->
   <section id="project" class="min-h-screen content-center pt-12">
     <h1
-      class="my-8 ms-40 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
+      class="my-8 lg:ms-40 ms-5 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
       <span
         class="leading-12 block w-full bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text py-2 text-transparent lg:inline">Projects:</span>
     </h1>
 
     <div class="flex flex-wrap items-center justify-center gap-8">
       <!-- Project 1 -->
-      <div class="max-w-sm overflow-hidden rounded shadow-lg">
+      <div class="lg:max-w-sm overflow-hidden rounded shadow-lg max-w-80">
         <div class="carousel h-56 w-full">
           <div class="carousel-container">
             <div class="slide w-full"><img src="images/herbalcare.png" alt="" /></div>
@@ -304,7 +304,7 @@
 
       <!-- Project 2 -->
 
-      <div class="max-w-sm overflow-hidden rounded shadow-lg">
+      <div class="lg:max-w-sm overflow-hidden rounded shadow-lg max-w-80">
         <div class="carousel h-56 w-full">
           <div class="carousel-container">
             <div class="slide w-full"><img src="images/proj2.png" alt="Image 1" /></div>
@@ -387,7 +387,7 @@
 
       <!-- Social Icons -->
 
-      <div class="mt-8 p-4">
+      <div class="mt-8 p-4 flex flex-col items-center justify-center">
         <p class="md:text-2xl">Connect with Me</p>
         <div class="mt-5 flex flex-wrap justify-center gap-8">
           <div class="my-4">
@@ -482,7 +482,7 @@
   let currentIndex = 0;
 
   function showSlide(index) {
-    container.style.transform = `translateX(-${index * 385}px)`;
+    container.style.transform = `translateX(-${index * 100}%)`;
   }
 
   function nextSlide() {

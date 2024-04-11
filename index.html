@@ -54,8 +54,7 @@
         <h1
           class="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
           <span>Hi I'm </span> <span
-            class="leading-12 block w-full bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text py-2 text-transparent lg:inline">Prajeesh
-            Chavan</span>
+            id="text-type-anim" class="leading-12 block w-full bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text py-2 text-transparent lg:inline"></span>
         </h1>
         <p class="mb-8 leading-relaxed">"Welcome to my portfolio! I'm Prajeesh Chavan, a passionate 2nd-year Computer
           Science student with a knack for Front End Development and proficiency in languages like C++, Java, along with
@@ -526,6 +525,46 @@
   }
 
   setInterval(nextSlide, 2000); // Change slide every 2 seconds
+
+   // Typing Animation
+
+var i = 0;
+var txt = ["Prajeesh Chavan", "Web Designer", "Web Developer", "Java Developer"]; //Add Text here
+var index = 0;
+var currentText = "";
+var speed = 80; //Speed of typing
+
+typeWriter(txt[index]);
+
+function typeWriter(text) {
+  currentText = text;
+  if (i < text.length) {
+    var newText = text.substring(0, i + 1);
+    document.getElementById("text-type-anim").innerHTML = newText + "|";
+    i++;
+
+    setTimeout(function () {
+      typeWriter(currentText);
+    }, speed);
+  } else {
+    setTimeout(eraseText, 1500);
+  }
+}
+
+function eraseText() {
+  if (i >= 0) {
+    var newText = currentText.substring(0, i);
+    document.getElementById("text-type-anim").innerHTML = newText + "|";
+    i--;
+    setTimeout(eraseText, speed);
+  } else {
+    i = 0;
+    index = index < txt.length - 1 ? index + 1 : 0;
+    setTimeout(function () {
+      typeWriter(txt[index]);
+    }, 500);
+  }
+}
 </script>
 
 </html>

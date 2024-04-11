@@ -382,25 +382,26 @@
       </div>
       <div
         class="mx-auto mt-12 border bg-transparent p-8 px-4 shadow-xl backdrop-blur-[3px] sm:max-w-lg sm:rounded-xl sm:px-8">
-        <form onsubmit="event.preventDefault()" class="space-y-5">
+        <form  class="space-y-5" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="005ffe6f-0d62-43de-9965-4fa901fc17e0">
           <div>
             <label class="font-medium"> Full name </label>
-            <input type="text" required
+            <input type="text" required name="name"
               class="mt-2 w-full rounded-lg border bg-transparent px-3 py-2 text-gray-500 shadow-sm outline-none focus:border-gray-800" />
           </div>
           <div>
             <label class="font-medium"> Email </label>
-            <input type="email" required
+            <input type="email" required name="email"
               class="mt-2 w-full rounded-lg border bg-transparent px-3 py-2 text-gray-500 shadow-sm outline-none focus:border-gray-800" />
           </div>
 
           <div>
             <label class="font-medium"> Message </label>
-            <textarea required
+            <textarea required name="Message"
               class="h-35 mt-2 w-full resize-none appearance-none rounded-lg border bg-transparent px-3 py-2 shadow-sm outline-none focus:border-gray-800"></textarea>
           </div>
           <button
-            class="w-full rounded-lg bg-gray-800 px-4 py-2 font-medium text-white duration-150 hover:bg-gray-700 active:bg-gray-900">Submit</button>
+             type="submit" class="w-full rounded-lg bg-gray-800 px-4 py-2 font-medium text-white duration-150 hover:bg-gray-700 active:bg-gray-900">Submit</button>
         </form>
       </div>
     </div>
